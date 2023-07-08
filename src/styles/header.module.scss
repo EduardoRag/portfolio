@@ -127,8 +127,8 @@ header {
         }
 
         .avatar {
-            width: 556px;
-            height: 515px;
+            max-width: 556px;
+            max-height: 515px;
         }
 
         .contact-div {
@@ -189,4 +189,45 @@ header {
             }
         }
     }
+}
+
+@media (max-width: 950px) {
+    .header-content {
+        .stacks-div {
+            img {
+                width: 25px;
+            }
+        }
+
+        .avatar {
+            width: 256px;
+            height: 215px;
+        }
+
+        .header-user-div {
+            strong {
+                width: 130px !important;
+                font-size: 15px !important;
+            }
+
+            h1 {
+                font-size: 35px !important;
+            }
+
+            span {
+                font-size: 15px !important;
+            }
+        }
+
+        .contact-div {
+            strong {
+                font-size: 12px !important;
+            }
+
+            .whats-div {
+                width: 156px !important;
+            }
+        }
+    }
+
 }

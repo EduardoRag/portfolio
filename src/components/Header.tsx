@@ -25,7 +25,7 @@ function Header() {
 
             <div className={styles['header-content']}>
                 <div className={styles['header-user-div']}>
-                    <strong className={styles['greetings-div']}>👋 Saudações!</strong>
+                    <strong>👋 Saudações!</strong>
                     <h1>Eduardo</h1>
                     <span>Full-Stack developer</span>
                     <div className={styles['stacks-div']}>
