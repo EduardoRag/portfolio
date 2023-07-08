@@ -4,6 +4,7 @@ import Avatar from '../assets/avatar.svg';
 import WhatsAppIcon from '../assets/whatsapp.svg'
 import LinkdinIcon from '../assets/linkdin.svg';
 import GithubIcon from '../assets/github.svg';
+import ArrowDown from '../assets/arrow-down.svg';
 
 function Header() {
     return (
@@ -24,18 +25,22 @@ function Header() {
 
             <div className={styles['header-content']}>
                 <div className={styles['header-user-div']}>
-                    <strong className={styles['greetings-div']}>👋 Saudações</strong>
+                    <strong className={styles['greetings-div']}>👋 Saudações!</strong>
                     <h1>Eduardo</h1>
                     <span>Full-Stack developer</span>
                     <div className={styles['stacks-div']}>
-                        <img
-                            src={LinkdinIcon}
-                            alt="Icone do linkedin"
-                        />
-                        <img
-                            src={GithubIcon}
-                            alt="Icone do Github"
-                        />
+                        <Link to='https://www.linkedin.com/in/eduardo-jarek-9773a5164/' target='_blank'>
+                            <img
+                                src={LinkdinIcon}
+                                alt="Icone do linkedin"
+                            />
+                        </Link>
+                        <Link to='https://github.com/EduardoRag' target='_blank'>
+                            <img
+                                src={GithubIcon}
+                                alt="Icone do Github"
+                            />
+                        </Link>
                     </div>
                 </div>
                 <img
@@ -44,13 +49,19 @@ function Header() {
                     className={styles.avatar}
                 />
                 <div className={styles['contact-div']}>
-                    <strong>Baixar CV</strong>
+                    <div className={styles['download-cv-div']}>
+                        <strong>Baixar CV</strong>
+                        <img
+                            src={ArrowDown}
+                            alt="Flecha de download do CV"
+                        />
+                    </div>
                     <div className={styles['whats-div']}>
                         <img
                             src={WhatsAppIcon}
                             alt="Icone do whatsApp"
                         />
-                        <span>Vamos conversar</span>
+                        <strong>Vamos conversar</strong>
                     </div>
                 </div>
             </div>
