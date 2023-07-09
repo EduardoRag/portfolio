@@ -1,11 +1,13 @@
 @import './colors';
 
 .main-container {
-  padding: 38px 140px 0 140px;
-
   height: 100%;
 
   background-color: $primary;
 
   color: white;
+}
+
+.line {
+  border: 1px solid $purple-twenty-opacity;
 }

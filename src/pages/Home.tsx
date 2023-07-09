@@ -6,6 +6,7 @@ function Home() {
   return (
     <div className={styles['main-container']}>
       <Header />
+      <div className={styles.line} />
     </div>
   );
 }
