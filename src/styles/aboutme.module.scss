@@ -1,0 +1,40 @@
+@import './colors';
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 144px 140px 186px 140px;
+}
+
+.pic-div {
+    width: 454px;
+    height: 454px;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    background-image: url('https://avatars.githubusercontent.com/u/109002309?v=4');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: $white-fifty-opacity;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+
+        &:last-child {
+            margin-top: 50px;
+        }
+    }
+}
