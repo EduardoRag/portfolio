@@ -1,6 +1,6 @@
 @import './colors';
 
-section {
+.section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    span {
+    p {
         color: $white-fifty-opacity;
         font-family: 'Raleway', sans-serif;
         font-size: 18px;

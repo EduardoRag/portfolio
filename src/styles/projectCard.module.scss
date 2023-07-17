@@ -1,0 +1,68 @@
+@import './colors';
+
+.card-main-div {
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+    height: 460px;
+
+    padding: 30px;
+
+    border-radius: 16px;
+    border: 1px solid $purple-fifty-opacity;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(101%);
+        background-color: $purple-ten-opacity;
+    }
+
+    .h2 {
+        margin-bottom: 9px;
+    }
+
+    .p {
+        width: 100%;
+        height: 100px;
+
+        margin-bottom: 21px;
+
+        color: $white-fifty-opacity;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .project-stacks {
+        display: flex;
+        gap: 8px;
+
+        margin-bottom: 22px;
+
+        .strong {
+            padding: 8px 15px;
+
+            border-radius: 8px;
+            background-color: $purple-ten-opacity;
+
+
+            color: $purple-primary;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .img {
+        height: 200px;
+        border-radius: 8px;
+    }
+
+}
