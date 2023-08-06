@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 
 function Projects() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id='projects'>
             <h1 className={styles['h1-projects']}>Projetos</h1>
             <article className={styles['projects-container']}>
                 <ProjectCard />

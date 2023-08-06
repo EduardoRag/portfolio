@@ -1,24 +1,24 @@
-import styles from '../styles/header.module.scss';
-import Avatar from '../assets/avatar.svg';
-import WhatsAppIcon from '../assets/whatsapp.svg'
-import LinkdinIcon from '../assets/linkdin.svg';
-import GithubIcon from '../assets/github.svg';
+import { Link } from 'react-scroll';
 import ArrowDown from '../assets/arrow-down.svg';
-import { HashLink as Link } from 'react-router-hash-link';
+import Avatar from '../assets/avatar.svg';
+import GithubIcon from '../assets/github.svg';
+import LinkdinIcon from '../assets/linkdin.svg';
+import WhatsAppIcon from '../assets/whatsapp.svg';
+import styles from '../styles/header.module.scss';
+import downloadResume from '../utils/downloadResume';
+import whatsAppContact from '../utils/whatsAppContact';
 
 function Header() {
     return (
-        <header className={styles.header}>
+        <header className={styles.header} id='home'>
             <nav>
                 <ul>
                     <li>
-                        <Link to='#' className={styles.selected}>Home</Link>
-                        <Link to='#aboutme'>Sobre mim</Link>
-                        <Link to='#'>Portfólio</Link>
-                        <Link to='#'> Skill</Link>
-                        <Link to='#'>Carreira</Link>
-                        <Link to='#'>Recomendações</Link>
-                        <Link to='#'>Contato</Link>
+                        <Link to='/' className={styles.selected}>Home</Link>
+                        <Link to='aboutme' smooth >Sobre mim</Link>
+                        <Link to='projects' smooth>Projetos</Link>
+                        <Link to='skills' smooth> Skill</Link>
+                        <Link to='contact' smooth>Contato</Link>
                     </li>
                 </ul>
             </nav>
@@ -49,14 +49,20 @@ function Header() {
                     className={styles.avatar}
                 />
                 <div className={styles['contact-div']}>
-                    <div className={styles['download-cv-div']}>
+                    <div
+                        className={styles['download-cv-div']}
+                        onClick={() => downloadResume()}
+                    >
                         <strong>Baixar CV</strong>
                         <img
                             src={ArrowDown}
                             alt="Flecha de download do CV"
                         />
                     </div>
-                    <div className={styles['whats-div']}>
+                    <div
+                        className={styles['whats-div']}
+                        onClick={() => whatsAppContact()}
+                    >
                         <img
                             src={WhatsAppIcon}
                             alt="Icone do whatsApp"

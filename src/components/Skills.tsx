@@ -9,7 +9,7 @@ import styles from '../styles/skills.module.scss';
 
 function Skills() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id='skills'>
             <article className={styles.article}>
                 <h2 className='h2'>
                     🤓 Skills - Experiências
