@@ -6,9 +6,7 @@ function AboutMe() {
             <article className={styles['pic-div']} />
 
             <article className={styles['about-me']}>
-                <header>
-                    <h2 className='h2'>🧐 Sobre mim</h2>
-                </header>
+                <h2 className='h2'>🧐 Sobre mim</h2>
 
                 <h1 className='h1-name'>Eduardo</h1>
 
