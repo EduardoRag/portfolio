@@ -1,4 +1,5 @@
 import AboutMe from '../components/AboutMe';
+import Contact from '../components/Contact';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
@@ -14,6 +15,8 @@ function Home() {
       <Projects />
       <div className={styles.line} />
       <Skills />
+      <div className={styles.line} />
+      <Contact />
       <div className={styles.line} />
     </main>
   );

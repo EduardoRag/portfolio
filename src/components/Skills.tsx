@@ -15,7 +15,7 @@ function Skills() {
                     🤓 Skills - Experiências
                 </h2>
 
-                <strong className={styles.strong}>
+                <strong className='strong'>
                     Tecnologias e habilidades
                 </strong>
 
