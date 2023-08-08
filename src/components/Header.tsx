@@ -1,3 +1,4 @@
+import { Link as LinkReact } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import ArrowDown from '../assets/arrow-down.svg';
 import Avatar from '../assets/avatar.svg';
@@ -29,18 +30,18 @@ function Header() {
                     <h1 className='h1-name'>Eduardo</h1>
                     <span>Full-Stack developer</span>
                     <div className={styles['stacks-div']}>
-                        <Link to='https://www.linkedin.com/in/eduardo-jarek-9773a5164/' target='_blank'>
+                        <LinkReact to='https://www.linkedin.com/in/eduardo-jarek-9773a5164/' target='_blank'>
                             <img
                                 src={LinkdinIcon}
                                 alt="Icone do linkedin"
                             />
-                        </Link>
-                        <Link to='https://github.com/EduardoRag' target='_blank'>
+                        </LinkReact>
+                        <LinkReact to='https://github.com/EduardoRag' target='_blank'>
                             <img
                                 src={GithubIcon}
                                 alt="Icone do Github"
                             />
-                        </Link>
+                        </LinkReact>
                     </div>
                 </div>
                 <img

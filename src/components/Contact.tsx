@@ -1,4 +1,6 @@
 import { Link } from 'react-scroll';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ArrowUpIcon from '../assets/arrow-up.svg';
 import CopyIcon from '../assets/copyIcon.svg';
 import EmailIcon from '../assets/emailIcon.svg';
@@ -6,7 +8,15 @@ import WhatsAppIcon from '../assets/whatsapp.svg';
 import styles from '../styles/contact.module.scss';
 import whatsAppContact from '../utils/whatsAppContact';
 
+
 function Contact() {
+    const notify = () => {
+        toast("E-mail copiado!", {
+            position: toast.POSITION.BOTTOM_RIGHT,
+            className: styles.notify,
+            theme: 'dark'
+        });
+    }
     const handleCopyEmail = () => {
         const emailContainer = document.querySelector(`.${styles.p}`) as HTMLParagraphElement | null;
         if (emailContainer) {
@@ -19,9 +29,8 @@ function Contact() {
             document.execCommand('copy');
             document.body.removeChild(textArea);
 
-            console.log('a')
+            notify();
         }
-        console.log(emailContainer)
     }
 
     return (
@@ -72,6 +81,7 @@ function Contact() {
                     alt='Icone de seta para cima para voltar ao topo do site'
                 />
             </Link>
+            <ToastContainer />
         </section >
     )
 }
