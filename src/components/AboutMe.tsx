@@ -14,7 +14,7 @@ function AboutMe() {
 
                 <p>👨‍💻 Desenvolvendo e programando com JavaScript, Typescript, React JS e Node JS.</p>
 
-                <p>🎓 Formado no curso de Desenvolvimento de Softwares FullStack pela Cubos Academy.</p>
+                <p>🎓 Formado em Desenvolvimento de Softwares FullStack pela Cubos Academy.</p>
 
                 <p>💡 Interesses em desenvolvimento Front-end e/ou Back-end.</p>
 
