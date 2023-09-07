@@ -19,7 +19,7 @@
         background-color: $purple-ten-opacity;
     }
 
-    .h2 {
+    h2 {
         margin-bottom: 9px;
     }
 
@@ -30,7 +30,7 @@
         margin-bottom: 21px;
 
         color: $white-fifty-opacity;
-        font-size: 14px;
+        font-size: 1.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -44,7 +44,7 @@
 
         margin-bottom: 22px;
 
-        .strong {
+        strong {
             padding: 8px 15px;
 
             border-radius: 8px;
@@ -53,7 +53,7 @@
 
             color: $purple-primary;
             text-align: center;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -65,4 +65,23 @@
         border-radius: 8px;
     }
 
+}
+
+@media (min-width: 1200px) and (max-width: 1390px) {
+    .card-main-div {
+        width: 260px;
+        height: 360px;
+
+        h2 {
+            font-size: 2.0rem;
+        }
+
+        .project-stacks {
+            margin-bottom: 18px !important;
+
+            strong {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
 }
