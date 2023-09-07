@@ -33,7 +33,7 @@
                 color: $white-fifty-opacity;
                 text-align: center;
                 font-family: 'Raleway', sans-serif;
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -50,7 +50,7 @@
                 color: $purple-fifty-opacity;
                 text-align: center;
                 font-family: 'Raleway', sans-serif;
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
@@ -71,13 +71,26 @@
             display: flex;
             flex-direction: column;
 
+            strong {
+                padding: 3px 10px;
+
+                margin-bottom: 22px;
+
+                background-color: $purple-ten-opacity;
+
+                border-radius: 36px;
+                border: 1px solid #000;
+
+                color: $purple-primary;
+            }
+
             span {
                 margin-bottom: 25px;
 
                 color: $white-fifty-opacity;
                 text-align: justify;
                 font-family: 'Raleway', sans-serif;
-                font-size: 20px;
+                font-size: 2.0rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -106,7 +119,7 @@
             strong {
                 color: $purple-fifty-opacity;
                 font-family: 'Raleway', sans-serif;
-                font-size: 16px;
+                font-size: 1.6rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -140,8 +153,7 @@
                 align-items: center;
                 gap: 8px;
 
-                width: 196px;
-                height: 44px;
+                padding: 12px 13px;
 
                 border: 1px solid $purple-fifty-opacity;
                 border-radius: 16px;
@@ -162,49 +174,43 @@
     }
 }
 
-// @media (max-width: 1270px) {
-//     header {
-//         height: 618px;
+@media (min-width: 1200px) and (max-width: 1390px) {
+    header {
+        height: 618px;
 
-//         nav {
-//             height: 44px;
+        nav {
+            height: 44px;
 
-//             li {
-//                 a {
-//                     font-size: 16px !important;
-//                 }
-//             }
-//         }
+            li {
+                a {
+                    font-size: 1.6rem !important;
+                }
+            }
+        }
 
-//     }
+        .header-user-div {
+            strong {
+                border-radius: 16px;
+            }
+        }
 
-//     .header-content {
-//         .stacks-div {
-//             img {
-//                 width: 25px;
-//             }
-//         }
+        .header-content {
+            .stacks-div {
+                img {
+                    width: 25px;
+                }
+            }
 
-//         .avatar {
-//             width: 356px;
-//             height: 315px;
-//         }
+            .avatar {
+                width: 356px;
+                height: 315px;
+            }
 
-//         .header-user-div {
-//             h1 {
-//                 font-size: 45px !important;
-//             }
-//         }
-
-//         .contact-div {
-//             strong {
-//                 font-size: 12px !important;
-//             }
-
-//             .whats-div {
-//                 width: 156px !important;
-//             }
-//         }
-//     }
-
-// }
+            .contact-div {
+                strong {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+}
