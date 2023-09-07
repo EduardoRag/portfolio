@@ -36,7 +36,7 @@ function Contact() {
     return (
         <section className={styles.section} id='contact'>
             <h2 className='h2'>📬 Contatos</h2>
-            <strong className='strong'>
+            <strong className='strong contact-lets-talk-strong'>
                 Vamos conversar!
             </strong>
 
@@ -49,7 +49,7 @@ function Contact() {
                         src={WhatsAppIcon}
                         alt="Icone do whatsApp"
                     />
-                    <strong>Vamos conversar</strong>
+                    <strong>Enviar mensagem</strong>
                 </div>
 
                 <div className={styles['email-container']}>
