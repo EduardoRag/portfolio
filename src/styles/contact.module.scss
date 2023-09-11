@@ -1,6 +1,6 @@
 @import './colors';
 
-section {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,7 +115,7 @@ section {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1390px) {
+@media (min-width: 1081px) and (max-width: 1700px) {
     section {
         margin: 50px;
     }

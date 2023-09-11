@@ -3,7 +3,7 @@
 .section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin: 144px 140px 186px 140px;
 
@@ -42,8 +42,41 @@
             }
         }
     }
+}
 
-    @media (min-width: 1200px) and (max-width: 1390px) {
+@media (max-width: 1080px) {
+    .section {
+        justify-content: space-between;
+
+        .pic-div {
+            width: 255px;
+            height: 255px;
+
+            border-radius: 50%;
+        }
+
+        .about-me {
+            width: 60%;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+
+                &:last-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
+    .section {
+        justify-content: space-between;
+
         .pic-div {
             width: 255px;
             height: 255px;

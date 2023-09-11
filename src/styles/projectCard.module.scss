@@ -66,10 +66,28 @@
         height: 200px;
         border-radius: 8px;
     }
-
 }
 
-@media (min-width: 1200px) and (max-width: 1390px) {
+@media (min-width: 971px) and (max-width: 1080px) {
+    .card-main-div {
+        width: 260px;
+        height: 360px;
+
+        h2 {
+            font-size: 2.0rem;
+        }
+
+        .project-stacks {
+            margin-bottom: 18px !important;
+
+            strong {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
     .card-main-div {
         width: 260px;
         height: 360px;
