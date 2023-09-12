@@ -18,3 +18,9 @@
         width: 100%;
     }
 }
+
+@media (min-width: 769px) and (max-width: 970px) {
+    .section {
+        margin: 100px 140px;
+    }
+}
