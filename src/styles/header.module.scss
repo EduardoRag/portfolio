@@ -172,6 +172,64 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        height: 480px !important;
+
+        padding: 38px 30px !important;
+
+        nav {
+            padding: 10px 15px !important;
+
+            li {
+                a {
+                    font-size: 1.3rem !important;
+                }
+            }
+        }
+
+        .header-user-div {
+            strong {
+                align-self: flex-start;
+                font-size: 1.1rem;
+            }
+
+            span {
+                font-size: 1.0rem !important;
+            }
+        }
+
+        .header-content {
+            justify-content: space-evenly !important;
+
+            .stacks-div {
+                img {
+                    width: 20px;
+                }
+            }
+
+            .avatar {
+                width: 180px !important;
+            }
+
+            .contact-div {
+                strong {
+                    font-size: 1.1rem !important;
+                }
+
+                .whats-div {
+                    padding: 6px 10px !important;
+
+                    img {
+                        width: 18px !important;
+                        height: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 769px) and (max-width: 970px) {
     header {
         height: 650px !important;
