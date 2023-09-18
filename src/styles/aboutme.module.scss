@@ -44,6 +44,38 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        gap: 50px;
+
+        margin: 50px 30px;
+
+        .pic-div {
+            width: 155px;
+            height: 155px;
+
+            border-radius: 50%;
+        }
+
+        .about-me {
+            width: 100%;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+
+                &:last-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 769px) and (max-width: 970px) {
     .section {
         flex-direction: column-reverse;
