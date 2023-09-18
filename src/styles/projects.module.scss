@@ -19,6 +19,12 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .section {
+        margin: 50px 30px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 970px) {
     .section {
         margin: 100px 140px;
