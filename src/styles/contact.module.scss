@@ -17,10 +17,11 @@
         strong {
             color: $purple-fifty-opacity;
             font-family: 'Raleway', sans-serif;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            text-align: center;
         }
 
         .whats-container {
@@ -28,9 +29,7 @@
             justify-content: center;
             align-items: center;
             gap: 8px;
-
-            width: 196px;
-            height: 44px;
+            padding: 8px 15px;
 
             border: 1px solid $purple-fifty-opacity;
             border-radius: 16px;
@@ -92,7 +91,7 @@
         strong {
             color: $purple-fifty-opacity;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.3em;
+            font-size: 1.3rem;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -112,6 +111,26 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .section {
+        margin: 38px 30px !important;
+
+        .contact-container {
+            gap: 50px !important;
+
+            strong {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        .email-container {
+            .p {
+                font-size: 1.5rem !important;
+            }
+        }
     }
 }
 
